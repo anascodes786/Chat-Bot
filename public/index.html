@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#152833">
+  <meta name="description" content="Imagine Studio — turn your ideas into original illustrations, one conversation at a time.">
+  <title>Imagine — Your creative studio</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <button id="sidebar-overlay" class="sidebar-overlay" aria-label="Close conversations" tabindex="-1"></button>
+  <aside id="sidebar" aria-label="Your workspace">
+    <div class="sidebar-brand-row">
+      <a class="brand" href="/" aria-label="Imagine home">
+        <span class="brand-mark"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="m16 3 3.8 9.2L29 16l-9.2 3.8L16 29l-3.8-9.2L3 16l9.2-3.8L16 3Z" fill="currentColor"/><circle cx="16" cy="16" r="3" fill="#152833"/></svg></span>
+        <span>imagine<span class="brand-dot">.</span><small>YOUR CREATIVE STUDIO</small></span>
+      </a>
+      <button id="sidebar-close" class="icon-button" aria-label="Close conversations">×</button>
+    </div>
+    <button id="new-chat" class="new"><span class="plus">＋</span> New creation <span class="new-shortcut">↗</span></button>
+    <div class="section-label"><span>YOUR CONVERSATIONS</span><span class="tiny-dot"></span></div>
+    <nav id="history" aria-label="Saved conversations"></nav>
+    <div class="sidebar-note">
+      <span class="note-icon">✧</span>
+      <strong>Good ideas start here.</strong>
+      <p>A small thought, a wild idea.<br>There’s room for all of it.</p>
+      <span class="note-line"></span>
+    </div>
+    <div class="aside-bottom">
+      <span class="avatar">Y</span>
+      <div><strong>Your workspace</strong><small>Personal &amp; private</small></div>
+      <button id="clear" class="icon-button" title="Delete saved conversations" aria-label="Delete saved conversations"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 7h16M9 4h6l1 3H8l1-3Zm-3 3 1 13h10l1-13M10 10v7m4-7v7"/></svg></button>
+    </div>
+  </aside>
+  <main>
+    <header>
+      <div class="header-left">
+        <button id="sidebar-toggle" class="icon-button" aria-label="Open conversations" aria-controls="sidebar" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        <span class="breadcrumb">Workspace <span>/</span> <strong>Image studio</strong></span>
+      </div>
+      <div class="header-right"><span class="private-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="6" y="10" width="12" height="10" rx="3"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Private workspace</span><button id="setup" class="setup-button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m9 4 1-2h4l1 2 3 2 2 1v4l-2 1-1 3v2l-3 2-2-1h-3l-2 1-3-2v-3l-1-2-2-1V7l2-1 3-2Z" transform="translate(1 2) scale(.85)"/><circle cx="12" cy="12" r="3"/></svg><span>Settings</span></button></div>
+    </header>
+    <div class="workspace-meta"><span class="workspace-title"><span class="workspace-title-icon">✧</span> CREATE SOMETHING ORIGINAL</span><span id="status" role="status" data-state="checking">Getting your studio ready…</span></div>
+
+    <section id="welcome">
+      <div class="hero-kicker"><span></span> A SPACE FOR YOUR IMAGINATION</div>
+      <h1>Big ideas.<br><em>Beautifully imagined.</em></h1>
+      <p class="hero-description">Turn the idea in your head into something you can see.<br>Just describe it. We’ll take it from there.</p>
+      <div class="suggestion-heading"><span>A little inspiration to get you started</span><button id="surprise" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 4 1-1 4M4 5c7 0 7 14 16 14m-4-3 4 3-4 3M4 19c3 0 5-3 7-7m3-5c2-2 4-3 6-3"/></svg> Surprise me</button></div>
+      <div class="ideas">
+        <button class="idea-card" data-prompt="A friendly golden dog sitting in a peaceful garden, soft sage background, warm sunlight, charming vector illustration">
+          <div class="idea-art dog-art">
+            <span class="art-label">ILLUSTRATION</span>
+            <svg viewBox="0 0 340 190" role="img" aria-label="Example illustration of a golden dog in a garden">
+              <defs><linearGradient id="dog-bg" x2="0" y2="1"><stop stop-color="#e3eae0"/><stop offset="1" stop-color="#c5d9ce"/></linearGradient><linearGradient id="dog-coat" x2=".9" y2="1"><stop stop-color="#e6b379"/><stop offset="1" stop-color="#ba7d48"/></linearGradient></defs>
+              <rect width="340" height="190" fill="url(#dog-bg)"/><circle cx="263" cy="45" r="28" fill="#f5efcb"/><path d="M0 145Q60 102 128 148T340 130V190H0Z" fill="#b1c9b3"/><path d="M0 166Q95 130 198 164T340 152V190H0Z" fill="#94b89e"/><ellipse cx="172" cy="173" rx="65" ry="9" fill="#6f937e" opacity=".24"/>
+              <path d="M208 141q43-20 35-52q-18 11-21 28l-20 7" fill="#b78350"/><ellipse cx="175" cy="139" rx="36" ry="35" fill="url(#dog-coat)"/><ellipse cx="174" cy="145" rx="22" ry="28" fill="#e8c89f"/><rect x="145" y="148" width="15" height="27" rx="7" fill="#c58c55"/><rect x="188" y="148" width="15" height="27" rx="7" fill="#bd824d"/><ellipse cx="151" cy="173" rx="12" ry="5" fill="#b7804d"/><ellipse cx="195" cy="173" rx="12" ry="5" fill="#b7804d"/>
+              <path d="M145 76q-28-9-27 23t26 27Z" fill="#996745"/><path d="M196 76q28-9 25 24t-25 25Z" fill="#996745"/><ellipse cx="171" cy="90" rx="35" ry="34" fill="url(#dog-coat)"/><ellipse cx="172" cy="105" rx="23" ry="17" fill="#f3d9b6"/><circle cx="158" cy="87" r="4" fill="#343735"/><circle cx="186" cy="87" r="4" fill="#343735"/><circle cx="159" cy="86" r="1.2" fill="white"/><circle cx="187" cy="86" r="1.2" fill="white"/><path d="M165 100q7-5 14 0q-1 8-7 8t-7-8" fill="#373b37"/><path d="M162 112q10 9 20 0" fill="none" stroke="#7d503c" stroke-width="2" stroke-linecap="round"/><path d="M169 116v6q5 6 9 0v-6" fill="#cc8279"/><path d="M144 119q27 12 54-1" fill="none" stroke="#385f55" stroke-width="6"/><circle cx="172" cy="125" r="5" fill="#e4b55c"/>
+              <path d="M45 170v-39m0 15q-21-4-18-19q19 0 18 19m1 8q18-4 21-20q-20-2-21 20M296 175v-42m0 20q-20-4-19-19q20-1 19 19m1 7q19-7 22-20q-22-3-22 20" fill="#6a9478" stroke="#6a9478" stroke-width="2"/><circle cx="78" cy="164" r="4" fill="#f5eacb"/><circle cx="263" cy="169" r="3" fill="#f5eacb"/>
+            </svg>
+          </div>
+          <div class="idea-caption"><div><small>THE EVERYDAY, REIMAGINED</small><strong>A little best friend</strong></div><span class="idea-arrow">↗</span></div>
+        </button>
+        <button class="idea-card" data-prompt="An elegant amber perfume bottle on a sculptural terracotta pedestal, warm cream background, botanical shadow, minimalist editorial vector illustration">
+          <div class="idea-art product-art">
+            <span class="art-label">PRODUCT &amp; BRAND</span>
+            <svg viewBox="0 0 340 190" role="img" aria-label="Example illustration of an amber perfume bottle on a sculptural pedestal">
+              <defs><linearGradient id="bottle-bg" x2="1" y2="1"><stop stop-color="#f4e8d9"/><stop offset="1" stop-color="#e2c2aa"/></linearGradient><linearGradient id="bottle-glass" x2="1" y2=".5"><stop stop-color="#a75e29"/><stop offset=".38" stop-color="#dfaa65"/><stop offset="1" stop-color="#9b5226"/></linearGradient></defs>
+              <rect width="340" height="190" fill="url(#bottle-bg)"/><path d="m0 190 177-190h89L90 190Z" fill="#fff7df" opacity=".4"/><circle cx="283" cy="14" r="72" fill="#dcbca3" opacity=".4"/><path d="M248 0q10 94 63 158M267 64q-22-23-7-53q26 20 7 53m8 20q24-34 53-24q-11 33-53 24m13 29q-27-2-27-27q28-1 27 27" fill="none" stroke="#b7957c" stroke-width="6" opacity=".2"/>
+              <ellipse cx="181" cy="182" rx="97" ry="10" fill="#af7f60" opacity=".19"/><path d="M89 147h168v43H89Z" fill="#bd8b6a"/><ellipse cx="173" cy="147" rx="84" ry="14" fill="#d4aa87"/><path d="M112 149v40m23-37v38m75-38v38m24-41v41" stroke="#aa795b" opacity=".3"/>
+              <rect x="143" y="60" width="63" height="89" rx="10" fill="url(#bottle-glass)"/><rect x="147" y="65" width="7" height="74" rx="3" fill="#ffe3a9" opacity=".45"/><rect x="152" y="92" width="45" height="38" rx="1" fill="#f5e9d3"/><path d="M162 102h25m-22 5h19m-17 14h15" stroke="#775a3d" stroke-width="1"/><text x="174.5" y="117" text-anchor="middle" font-family="Georgia,serif" font-size="9" letter-spacing="2" fill="#775a3d">AURA</text><rect x="158" y="44" width="34" height="19" rx="3" fill="#d4b078"/><rect x="155" y="31" width="40" height="19" rx="3" fill="#4a4940"/><path d="M160 34h30" stroke="#777367" stroke-width="2"/><path d="M150 148h48" stroke="#8d512b" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="idea-caption"><div><small>GIVE YOUR BRAND A NEW LOOK</small><strong>Something extraordinary</strong></div><span class="idea-arrow">↗</span></div>
+        </button>
+        <button class="idea-card" data-prompt="A tiny astronaut sitting on a crescent moon, fishing for golden stars in a dreamy midnight blue sky, whimsical vector illustration with soft lavender and gold accents">
+          <div class="idea-art space-art">
+            <span class="art-label">A LITTLE WONDER</span>
+            <svg viewBox="0 0 340 190" role="img" aria-label="Example illustration of a small astronaut fishing for stars on the moon">
+              <defs><linearGradient id="space-bg" x2="1" y2="1"><stop stop-color="#283f56"/><stop offset="1" stop-color="#5a647e"/></linearGradient><linearGradient id="moon" x2="1" y2="1"><stop stop-color="#f4e5bf"/><stop offset="1" stop-color="#cbbb98"/></linearGradient></defs>
+              <rect width="340" height="190" fill="url(#space-bg)"/><circle cx="171" cy="95" r="72" fill="#718298" opacity=".12"/><circle cx="171" cy="95" r="87" fill="none" stroke="#bcc1c9" opacity=".1"/><path d="M172 35a66 66 0 1 0 65 90a62 62 0 0 1-65-90" fill="url(#moon)"/><circle cx="133" cy="124" r="9" fill="#a99e8b" opacity=".25"/><circle cx="147" cy="151" r="5" fill="#a99e8b" opacity=".2"/>
+              <path d="M168 100q17-2 20 10l-2 22-13-1-8-15" fill="#e8e8e3"/><path d="m184 126 15 5 12-7m-38 4 3 16 13 2" fill="none" stroke="#dbdfdc" stroke-width="9" stroke-linecap="round"/><ellipse cx="172" cy="83" rx="17" ry="18" fill="#f2f0e6"/><ellipse cx="176" cy="82" rx="12" ry="12" fill="#385567"/><path d="M171 74q9-4 12 3" fill="none" stroke="#9fbdc2" stroke-width="2" stroke-linecap="round"/><rect x="154" y="100" width="12" height="20" rx="4" fill="#acbfc0"/><path d="m181 107 20-12 12 6" fill="none" stroke="#e8e8e3" stroke-width="8" stroke-linecap="round"/><path d="m204 96 32-31q19 24 9 64" fill="none" stroke="#d8c397" stroke-width="1.5"/><path d="m244 123 2 6 6 2-6 2-2 6-2-6-6-2 6-2Z" fill="#e9ca7b"/>
+              <g fill="#e6d8ae"><circle cx="68" cy="79" r="1.5"/><circle cx="260" cy="48" r="2"/><circle cx="289" cy="111" r="1.4"/><circle cx="86" cy="146" r="1.7"/><circle cx="216" cy="32" r="1.2"/><circle cx="113" cy="42" r="1.5"/><path d="m277 151 2 5 5 2-5 2-2 5-2-5-5-2 5-2ZM78 40l2 4 4 2-4 2-2 4-2-4-4-2 4-2Z"/></g>
+            </svg>
+          </div>
+          <div class="idea-caption"><div><small>TAKE YOUR MIND SOMEWHERE NEW</small><strong>Beyond the ordinary</strong></div><span class="idea-arrow">↗</span></div>
+        </button>
+      </div>
+    </section>
+
+    <section id="messages" aria-live="polite" aria-label="Conversation"></section>
+    <div class="composer-wrap">
+      <form id="composer">
+        <div class="composer-topline"><span class="composer-spark">✧</span><span>YOUR NEXT GREAT IDEA STARTS HERE</span><span id="prompt-count">0 / 8,000</span></div>
+        <label class="sr-only" for="prompt">Describe your image or ask about your latest creation</label>
+        <textarea id="prompt" maxlength="8000" rows="2" placeholder="A sunlit garden, a curious dog, a world that doesn’t exist yet…" required></textarea>
+        <div class="toolbar">
+          <div class="controls">
+            <label><span>STYLE</span><select id="style"><option value="auto">✧ Auto style</option><option value="photographic">Detailed</option><option value="illustration">Illustration</option><option value="3D render">3D render</option><option value="cinematic">Cinematic</option></select></label>
+            <label><span>ASPECT RATIO</span><select id="size"><option value="1024x1024">□ Square · 1:1</option><option value="1536x1024">▭ Landscape · 3:2</option><option value="1024x1536">▯ Portrait · 2:3</option></select></label>
+            <label id="quality-label">DETAIL<select id="quality"><option value="auto">Balanced</option><option value="low">Simple</option><option value="medium">Medium</option><option value="high">Rich detail</option></select></label>
+          </div>
+          <button id="generate" type="submit">Generate image <span>↗</span></button>
+        </div>
+      </form>
+      <div class="composer-footer"><span><span class="model-dot"></span> Powered by <strong id="model-label">GPT-4o</strong><span id="output-badge">Vector illustrations</span></span><span><kbd>↵</kbd> to create <i>·</i> <kbd>shift ↵</kbd> new line</span></div>
+    </div>
+    <footer class="studio-footer">A little imagination goes a long way.</footer>
+  </main>
+  <dialog id="guide" aria-labelledby="guide-title">
+    <div class="dialog-top"><span class="dialog-icon">✧</span><button id="close-guide" class="icon-button" aria-label="Close settings">×</button></div>
+    <div class="eyebrow">STUDIO SETTINGS</div><h2 id="guide-title">Connect your imagination.</h2>
+    <p>Keep your connection details in the project’s <code>.env</code> file:</p>
+    <pre>API_ENDPOINT=https://YOUR-RESOURCE.openai.azure.com
+API_KEY=your-secret-key
+DEPLOYMENT=your-gpt-4o-deployment-name
+API_VERSION=2024-10-21
+PORT=3000</pre>
+    <p>Use the key and endpoint from the same Azure resource and your deployment’s exact name. Credential changes apply on your next request. Restart after changing the port.</p>
+    <div class="dialog-tip"><span>◎</span><small>Your key stays on the server. Download creations you want to keep before refreshing.</small></div>
+  </dialog>
+</body>
+</html>

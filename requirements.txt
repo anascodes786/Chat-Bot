@@ -1,0 +1,12 @@
+# Runtime: Node.js 22 or newer (includes npm).
+# This project has no Python/pip dependencies.
+#
+# External JavaScript library:
+# @xmldom/xmldom@0.9.12 - parses, validates, and cleans generated SVG drawings.
+#
+# Install JavaScript dependencies with: npm install
+# Exact versions are recorded in package-lock.json.
+#
+# Included with Node.js; no separate installation required:
+# node:http, node:fs, node:fs/promises, node:url, node:util,
+# node:path, node:os, node:test, node:assert/strict.
